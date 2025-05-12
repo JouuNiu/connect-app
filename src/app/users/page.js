@@ -22,8 +22,8 @@ export default function UserPage() {
                         <h2 className="text-2xl font-bold text-black text-right px-5 relative top-[-48px]"> Aktif</h2>
                     </div>
                     <div className="flex space-x-3 px-5 relative top-[-45] " >
-                        <h2 className="bg-black tet-white text-sm px-2 rounded">Admin</h2>
-                        <h2 className="bg-black tet-white text-sm px-2 rounded">Employee</h2>
+                        <h2 className="bg-black text-white text-sm px-2 rounded">Admin</h2>
+                        <h2 className="bg-black text-white text-sm px-2 rounded">Employee</h2>
                     </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ export default function UserPage() {
                         <h2 className="text-2xl font-bold text-black text-right px-5 relative top-[-48px]"> Aktif</h2>
                     </div>
                     <div className="flex space-x-3 px-5 relative top-[-45] " >
-                        <h2 className="bg-black tet-white text-sm px-2 rounded">Employee</h2>
+                        <h2 className="bg-black text-white text-sm px-2 rounded">Employee</h2>
                     </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ export default function UserPage() {
                         <h2 className="text-2xl font-bold text-black text-right px-5 relative top-[-48px]"> Aktif</h2>
                     </div>
                     <div className="flex space-x-3 px-5 relative top-[-45] " >
-                        <h2 className="bg-black tet-white text-sm px-2 rounded">Employee</h2>
+                        <h2 className="bg-black text-white text-sm px-2 rounded">Employee</h2>
                     </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ export default function UserPage() {
                         <h2 className="text-2xl font-bold text-black text-right px-5 relative top-[-48px]"> Suspended</h2>
                     </div>
                     <div className="flex space-x-3 px-5 relative top-[-45] " >
-                        <h2 className="bg-black tet-white text-sm px-2 rounded">Employee</h2>
+                        <h2 className="bg-black text-white text-sm px-2 rounded">Employee</h2>
                     </div>
                     </div>
                 </div>
