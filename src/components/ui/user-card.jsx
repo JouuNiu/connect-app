@@ -17,7 +17,6 @@ export default function UserCard({fullname, email, role, status}) {
         </div>
         <div className="flex space-x-3 px-5 relative top-[-45] ">
           <h2 className="bg-black text-white text-sm px-2 rounded">{role}</h2>
-          <h2 className="bg-black text-white text-sm px-2 rounded">{role}</h2>
         </div>
       </div>
     </div>

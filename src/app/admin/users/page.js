@@ -1,9 +1,34 @@
+'use client';
+
 import UserCard from "@/components/ui/user-card";
 import { dataUser } from "@/mock/data-user";
 
+import useSWR from 'swr';
 
 export default function UserPage() {
   const data = dataUser;
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  const {
+    data: users,
+    error,
+    isLoading,
+  } = useSWR(`https://jsonplaceholder.typicode.com/users`, fetcher);
+
+  if (isLoading) {
+    return (
+      <div>
+        <p>Loading...</p>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div>
+        <p>Gagal memuat data</p>
+      </div>
+    );
+  }
+  console.log(users);
 
   return (
     <section id="content" className="bg-white w-80% ">
@@ -14,13 +39,13 @@ export default function UserPage() {
           className="border-2 border-gray p-5 w-385 rounded-lg text-black "
         />
       </div>
-      {data.map((Employee, index) => (
+      {users.map((Employee, index) => (
         <UserCard
           key={index}
-          fullname={Employee.fullname}
+          fullname={Employee.name}
           email={Employee.email}
-          role={Employee.role}
-          status={Employee.status}
+          role={Employee.phone}
+          status={Employee.website}
         />
       ))}
 
