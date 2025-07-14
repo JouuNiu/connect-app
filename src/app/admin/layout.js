@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  IconBug,
   IconLogout,
   IconLogout2,
   IconNews,
@@ -24,11 +25,14 @@ export default function AdminLayout({ children }) {
           <button onClick={() => window.location.href = '/admin/roles'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconUserCog></IconUserCog> Hak akses
           </button>
-          <button onClick={() => window.location.href = '/admin/News'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
+          <button onClick={() => window.location.href = '/admin/news'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconNews></IconNews> Berita
           </button>
            <button onClick={() => window.location.href = '/login'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconLogout2></IconLogout2> Logout
+          </button>
+          <button onClick={() => window.location.href = '/bug'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
+            <IconBug/>Lapor Bug
           </button>
           <button onClick={() => window.location.href = '/admin/faq'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconQuestionMark></IconQuestionMark>FAQ

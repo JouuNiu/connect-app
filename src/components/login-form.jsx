@@ -20,9 +20,9 @@ export function LoginForm({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle>Login to your account</CardTitle>
+          <CardTitle>Login Ke Akun Anda</CardTitle>
           <CardDescription>
-            Enter your email below to login to your account
+            masukkan email anda untuk login
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -38,7 +38,7 @@ export function LoginForm({
                   <a
                     href="#"
                     className="ml-auto inline-block text-sm underline-offset-4 hover:underline">
-                    Forgot your password?
+                    Lupa Password?
                   </a>
                 </div>
                 <Input id="password" type="password" required />
@@ -53,8 +53,8 @@ export function LoginForm({
               </div>
             </div>
             <div className="mt-4 text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <a href="#" className="underline underline-offset-4">
+              tidak punya akun?{" "}
+              <a href="/sgnup" className="underline underline-offset-4">
                 Sign up
               </a>
             </div>

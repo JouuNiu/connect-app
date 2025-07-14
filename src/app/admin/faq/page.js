@@ -1,6 +1,5 @@
 "use client";
-import { dataUser } from "@/mock/data-user";
-import useSWR from "swr";
+
 import {
   Accordion,
   AccordionContent,
@@ -9,38 +8,18 @@ import {
 } from "@/components/ui/accordion"
 
 export default function FAQPage() {
-  const data = dataUser;
-  const fetcher = (...args) => fetch(...args).then((res) => res.json());
-
-  const {
-    data: users,
-    error,
-    isLoading,
-  } = useSWR(`https://jsonplaceholder.typicode.com/users`, fetcher);
-
-  if (isLoading){
-    return(
-      <div>
-        <p>
-          Loading...
-        </p>
-      </div>
-    );
-  }
-
-  if (error){
-    return(
-      <div>
-        <p>
-          Gagal memuat data
-        </p>
-      </div>
-    );
-  }
+  
     
     return (
+    
+    
     <div className="p-6">
-      <Accordion type="single" collapsible>
+
+<div> 
+  <a className="flex justify-center text-5xl">Frequently Asked Questions</a>
+</div>
+
+    <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger className={"text-xl"}>Bagaimana cara berlangganan newsletter?</AccordionTrigger>
           <AccordionContent>Anda dapat berlangganan newsletter kami dengan memasukkan alamat email Anda di bagian bawah halaman utama. Kami akan mengirimkan ringkasan berita harian atau mingguan langsung ke inbox Anda.</AccordionContent>
