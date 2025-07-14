@@ -1,3 +1,4 @@
+'use client';
 import {
   Table,
   TableBody,
@@ -8,9 +9,41 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { IconPencil, IconTrash } from "@tabler/icons-react";
+import { dataUser } from "@/mock/data-user";
+import useSWR from "swr";
 
 export default function RolesPage(){
-    return (
+  const data = dataUser;
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+  const {
+    data: users,
+    error,
+    isLoading,
+  } = useSWR(`https://jsonplaceholder.typicode.com/users`, fetcher);
+
+  if (isLoading){
+    return(
+      <div>
+        <p>
+          Loading...
+        </p>
+      </div>
+    );
+  }
+
+  if (error){
+    return(
+      <div>
+        <p>
+          Gagal memuat data
+        </p>
+      </div>
+    );
+  }
+      
+  
+  return (
       <div>
         <input 
           type="search"

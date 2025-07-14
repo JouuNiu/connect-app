@@ -4,6 +4,7 @@ import {
   IconLogout,
   IconLogout2,
   IconNews,
+  IconQuestionMark,
   IconUser,
   IconUserCog,
 } from "@tabler/icons-react";
@@ -26,10 +27,12 @@ export default function AdminLayout({ children }) {
           <button onClick={() => window.location.href = '/admin/News'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconNews></IconNews> Berita
           </button>
-          <button className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
+           <button onClick={() => window.location.href = '/login'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconLogout2></IconLogout2> Logout
           </button>
-          
+          <button onClick={() => window.location.href = '/admin/faq'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
+            <IconQuestionMark></IconQuestionMark>FAQ
+          </button>
  
         </div>
       </section>
