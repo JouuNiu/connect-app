@@ -33,7 +33,7 @@ export default function AdminLayout({ children }) {
  
         </div>
       </section>
-      <section id="content" className="bg-white w-80% ">
+      <section id="content" className="bg-white w-85% flex-1 p-[30px] overflow-y auto">
         {children}
       </section>
       

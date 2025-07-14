@@ -48,7 +48,7 @@ export default function UserPage() {
         <input
           type="text"
           placeholder="Cari user"
-          className="border-2 border-gray p-5 w-385 rounded-lg text-black "
+          className="border-2 border-gray p-5 w-full rounded-lg text-black "
         />
       </div>
       {users.map((Employee, index) => (
