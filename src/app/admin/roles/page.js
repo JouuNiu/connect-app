@@ -10,15 +10,20 @@ import {
 
 export default function RolesPage(){
     return (
+      <div>
+        <input 
+          type="search"
+          placeholder="Cari Hak Akses"
+          className="w-full p-3 border rounded-lg mb-7 text-base"
+        />
+      
     <Table>
-      <TableCaption>A list of your recent invoices.</TableCaption>
+      <TableCaption>Nomor</TableCaption>
         <TableHeader>
          <TableRow>
-          <TableHead className="w-[100px]">Invoice</TableHead>
-          <TableHead>Status</TableHead>
-          <TableHead>Method</TableHead>
-         <TableHead className="text-right">Amount</TableHead>
-         </TableRow>
+          <TableHead className="w-[100px]">Hak Akses</TableHead>
+          <TableHead>Action</TableHead>
+          </TableRow>
         </TableHeader>
       <TableBody>
         <TableRow>
@@ -29,5 +34,6 @@ export default function RolesPage(){
         </TableRow>
       </TableBody>
     </Table>
+    </div>
     );
 }
