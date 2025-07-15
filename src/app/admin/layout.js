@@ -5,6 +5,7 @@ import {
   IconLogout,
   IconLogout2,
   IconNews,
+  IconPhoto,
   IconQuestionMark,
   IconUser,
   IconUserCog,
@@ -27,6 +28,9 @@ export default function AdminLayout({ children }) {
           </button>
           <button onClick={() => window.location.href = '/admin/news'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconNews></IconNews> Berita
+          </button>
+           <button onClick={() => window.location.href = '/admin/photo'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
+            <IconPhoto/>Gambar
           </button>
            <button onClick={() => window.location.href = '/login'} className="flex items-center px-3 font-bold text-xl gap-2 bg-white text-black hover:bg-black hover:text-white rounded-md w-45 h-10">
             <IconLogout2></IconLogout2> Logout

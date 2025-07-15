@@ -45,13 +45,13 @@ export default function NewsPage() {
               className="border-2 border-gray p-5 w-full rounded-lg text-black "
             />
           </div>
-          {users.map((Employee, index) => (
+          {users.map((News, index) => (
             <UserCard
               key={index}
-              fullname={Employee.title}
-              email={Employee.body}
-              role={Employee.userId}
-              status={Employee.id}
+              fullname={News.title}
+              email={News.body}
+              role={News.userId}
+              status={News.id}
             />
           ))}
           </section>
